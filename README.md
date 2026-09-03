@@ -53,9 +53,6 @@ Hiring Probability / Confidence
 Result Displayed on Web Interface
 
 
-The training process loads the resume dataset, separates the target variable (hired) from the input features, encodes categorical values, and trains a Random Forest classifier. The trained model and encoders are then saved for use by the Flask application. {"fallbackMarkdown":"(GitHub
-)","reference":{"matched_text":"","prefix":null,"start_idx":2797,"end_idx":2814,"safe_urls":["https://github.com/simidubey29/resume-screening-ai/blob/main/model.py"],"refs":[],"alt":"(GitHub
-)","prompt_text":null,"type":"grouped_webpages","status":"done","items":[{"title":"resume-screening-ai/model.py at main · simidubey29/resume-screening-ai · GitHub","url":"https://github.com/simidubey29/resume-screening-ai/blob/main/model.py","attribution":"GitHub","pub_date":null,"snippet":null,"thumbnail_url":"https://images.openai.com/static-rsc-1/P_qUG3cUDcbx40ezNMNCMvlsTzRn90ik7V0sbdgV7l0VyiV6TW0U55pGtnF10DRAGsOHgevtFeQhtKm89PAdEViJ9i4de6DN2W91fm3WYslu5BmePQSX4MlCMw-ewHdqKIC1txGPA61yAUgqej28Sojp71-M9MBzTQaQ52SkahP1rN15EJ4KtodkxrggErdid6x_n5Pxil-mKnJ_koHinw","attribution_segments":null,"supporting_websites":[],"refs":[{"turn_index":1,"ref_type":"view","ref_index":1}],"hue":null,"attributions":null}],"error":null,"fallback_items":null,"style":null},"showLoginRequiredCard":false}
 
 🛠️ Tech Stack
 Technology	Purpose
@@ -84,9 +81,6 @@ Skills score
 Soft skills score
 Resume length
 
-These features are processed before being passed to the trained model. {"fallbackMarkdown":"(GitHub
-)","reference":{"matched_text":"","prefix":null,"start_idx":3552,"end_idx":3580,"safe_urls":["https://github.com/simidubey29/resume-screening-ai/blob/main/app.py","https://github.com/simidubey29/resume-screening-ai/blob/main/model.py"],"refs":[],"alt":"(GitHub
-)","prompt_text":null,"type":"grouped_webpages","status":"done","items":[{"title":"resume-screening-ai/app.py at main · simidubey29/resume-screening-ai · GitHub","url":"https://github.com/simidubey29/resume-screening-ai/blob/main/app.py","attribution":"GitHub","pub_date":null,"snippet":null,"thumbnail_url":"https://images.openai.com/static-rsc-1/zgLYOlNGQhBg9pY8cM-My6Wx700-RK9KtLnTCxBpQeATPXgJwhN4wwYmJ7yBlcoNjR1GskNmerQm9WNbQC-pyD4ETatMLDODe05pT6Ss4Rl95RNw4P8MT4Uas1X8AYE4fAUTJKcpe1ly1mASjP1Lazn8oGgtjVS77GZbixrMqGjw3yOPUVNnD2xS2UoBoPr28RaNUTTObCSl-ytp7kM4Pw","attribution_segments":null,"supporting_websites":[{"title":"resume-screening-ai/model.py at main · simidubey29/resume-screening-ai · GitHub","url":"https://github.com/simidubey29/resume-screening-ai/blob/main/model.py","pub_date":null,"snippet":null,"thumbnail_url":"https://images.openai.com/static-rsc-1/P_qUG3cUDcbx40ezNMNCMvlsTzRn90ik7V0sbdgV7l0VyiV6TW0U55pGtnF10DRAGsOHgevtFeQhtKm89PAdEViJ9i4de6DN2W91fm3WYslu5BmePQSX4MlCMw-ewHdqKIC1txGPA61yAUgqej28Sojp71-M9MBzTQaQ52SkahP1rN15EJ4KtodkxrggErdid6x_n5Pxil-mKnJ_koHinw","attribution":"GitHub"}],"refs":[{"turn_index":1,"ref_type":"view","ref_index":0},{"turn_index":1,"ref_type":"view","ref_index":1}],"hue":null,"attributions":null}],"error":null,"fallback_items":null,"style":null},"showLoginRequiredCard":false}
 
 📁 Project Structure
 resume-screening-ai/
@@ -110,15 +104,6 @@ File Description
 app.py
 Contains the Flask application, candidate input handling, preprocessing, prediction logic, and result display.
 
-model.py
-Loads the dataset, preprocesses categorical features, trains the Random Forest classifier, and saves the trained model and encoders. {"fallbackMarkdown":"(GitHub
-)","reference":{"matched_text":"","prefix":null,"start_idx":4119,"end_idx":4147,"safe_urls":["https://github.com/simidubey29/resume-screening-ai/blob/main/app.py","https://github.com/simidubey29/resume-screening-ai/blob/main/model.py"],"refs":[],"alt":"(GitHub
-)","prompt_text":null,"type":"grouped_webpages","status":"done","items":[{"title":"resume-screening-ai/app.py at main · simidubey29/resume-screening-ai · GitHub","url":"https://github.com/simidubey29/resume-screening-ai/blob/main/app.py","attribution":"GitHub","pub_date":null,"snippet":null,"thumbnail_url":"https://images.openai.com/static-rsc-1/zgLYOlNGQhBg9pY8cM-My6Wx700-RK9KtLnTCxBpQeATPXgJwhN4wwYmJ7yBlcoNjR1GskNmerQm9WNbQC-pyD4ETatMLDODe05pT6Ss4Rl95RNw4P8MT4Uas1X8AYE4fAUTJKcpe1ly1mASjP1Lazn8oGgtjVS77GZbixrMqGjw3yOPUVNnD2xS2UoBoPr28RaNUTTObCSl-ytp7kM4Pw","attribution_segments":null,"supporting_websites":[{"title":"resume-screening-ai/model.py at main · simidubey29/resume-screening-ai · GitHub","url":"https://github.com/simidubey29/resume-screening-ai/blob/main/model.py","pub_date":null,"snippet":null,"thumbnail_url":"https://images.openai.com/static-rsc-1/P_qUG3cUDcbx40ezNMNCMvlsTzRn90ik7V0sbdgV7l0VyiV6TW0U55pGtnF10DRAGsOHgevtFeQhtKm89PAdEViJ9i4de6DN2W91fm3WYslu5BmePQSX4MlCMw-ewHdqKIC1txGPA61yAUgqej28Sojp71-M9MBzTQaQ52SkahP1rN15EJ4KtodkxrggErdid6x_n5Pxil-mKnJ_koHinw","attribution":"GitHub"}],"refs":[{"turn_index":1,"ref_type":"view","ref_index":0},{"turn_index":1,"ref_type":"view","ref_index":1}],"hue":null,"attributions":null}],"error":null,"fallback_items":null,"style":null},"showLoginRequiredCard":false}
-
-utils.py
-Contains text-cleaning functionality such as lowercasing and removing unnecessary characters. {"fallbackMarkdown":"(GitHub
-)","reference":{"matched_text":"","prefix":null,"start_idx":4260,"end_idx":4277,"safe_urls":["https://github.com/simidubey29/resume-screening-ai/blob/main/utils.py"],"refs":[],"alt":"(GitHub
-)","prompt_text":null,"type":"grouped_webpages","status":"done","items":[{"title":"resume-screening-ai/utils.py at main · simidubey29/resume-screening-ai · GitHub","url":"https://github.com/simidubey29/resume-screening-ai/blob/main/utils.py","attribution":"GitHub","pub_date":null,"snippet":null,"thumbnail_url":"https://images.openai.com/static-rsc-1/iCRWQZzLUpgqZFi-IOV4_BTAE-uxnsmS76Yf0Vp9ou38CYVSStFE6hUeOYy_SO9sLhTZyrgEwtAOhDS-_RNsqUeShF6QaweyQpLdxcSqDfaXRTUISvJ8Gc_9N3it7TymEmuF3JnbuH68nZuDd_Zmq9VyZ_i3_SMRRocme6aG4W7rPWRGND0aD5erw_DBd2UqkAzFr12-KaO4ri6S1pbHkA","attribution_segments":null,"supporting_websites":[],"refs":[{"turn_index":1,"ref_type":"view","ref_index":2}],"hue":null,"attributions":null}],"error":null,"fallback_items":null,"style":null},"showLoginRequiredCard":false}
 
 dataset/resume.csv
 Contains the candidate dataset used to train the Machine Learning model.
@@ -191,10 +176,7 @@ Candidate is NOT likely to be hired ❌
 Confidence: 72.15%
 
 
-The confidence value is obtained from the model's predicted probabilities. {"fallbackMarkdown":"(GitHub
-)","reference":{"matched_text":"","prefix":null,"start_idx":5824,"end_idx":5841,"safe_urls":["https://github.com/simidubey29/resume-screening-ai/blob/main/app.py"],"refs":[],"alt":"(GitHub
-)","prompt_text":null,"type":"grouped_webpages","status":"done","items":[{"title":"resume-screening-ai/app.py at main · simidubey29/resume-screening-ai · GitHub","url":"https://github.com/simidubey29/resume-screening-ai/blob/main/app.py","attribution":"GitHub","pub_date":null,"snippet":null,"thumbnail_url":"https://images.openai.com/static-rsc-1/zgLYOlNGQhBg9pY8cM-My6Wx700-RK9KtLnTCxBpQeATPXgJwhN4wwYmJ7yBlcoNjR1GskNmerQm9WNbQC-pyD4ETatMLDODe05pT6Ss4Rl95RNw4P8MT4Uas1X8AYE4fAUTJKcpe1ly1mASjP1Lazn8oGgtjVS77GZbixrMqGjw3yOPUVNnD2xS2UoBoPr28RaNUTTObCSl-ytp7kM4Pw","attribution_segments":null,"supporting_websites":[],"refs":[{"turn_index":1,"ref_type":"view","ref_index":0}],"hue":null,"attributions":null}],"error":null,"fallback_items":null,"style":null},"showLoginRequiredCard":false}
-
+The confidence value is obtained from the model's predicted probabilities.
 🔬 Machine Learning Model
 
 The project uses a Random Forest Classifier.
@@ -204,10 +186,7 @@ Random Forest combines multiple decision trees to make a classification predicti
 hired
 
 
-Categorical features are converted into numerical representations using LabelEncoder before training. The dataset is divided into training and testing portions using an 80/20 split. {"fallbackMarkdown":"(GitHub
-)","reference":{"matched_text":"","prefix":null,"start_idx":6256,"end_idx":6273,"safe_urls":["https://github.com/simidubey29/resume-screening-ai/blob/main/model.py"],"refs":[],"alt":"(GitHub
-)","prompt_text":null,"type":"grouped_webpages","status":"done","items":[{"title":"resume-screening-ai/model.py at main · simidubey29/resume-screening-ai · GitHub","url":"https://github.com/simidubey29/resume-screening-ai/blob/main/model.py","attribution":"GitHub","pub_date":null,"snippet":null,"thumbnail_url":"https://images.openai.com/static-rsc-1/P_qUG3cUDcbx40ezNMNCMvlsTzRn90ik7V0sbdgV7l0VyiV6TW0U55pGtnF10DRAGsOHgevtFeQhtKm89PAdEViJ9i4de6DN2W91fm3WYslu5BmePQSX4MlCMw-ewHdqKIC1txGPA61yAUgqej28Sojp71-M9MBzTQaQ52SkahP1rN15EJ4KtodkxrggErdid6x_n5Pxil-mKnJ_koHinw","attribution_segments":null,"supporting_websites":[],"refs":[{"turn_index":1,"ref_type":"view","ref_index":1}],"hue":null,"attributions":null}],"error":null,"fallback_items":null,"style":null},"showLoginRequiredCard":false}
-
+Categorical features are converted into numerical representations using LabelEncoder before training. The dataset is divided into training and testing portions using an 80/20 split. 
 🔮 Future Improvements
 
 Some possible improvements for future versions include:
